@@ -1,71 +1,46 @@
-# Getting Started with Create React App
+/----------------------------Spreadsheet Application-----------------------------------------/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This is a React-based spreadsheet application that mimics the functionality of a traditional spreadsheet. The project includes features like grid rendering, cell editing, search and filter functionality. The state management is handled using Zustand, and the styling is done with Tailwind CSS.
 
-In the project directory, you can run:
 
-### `npm start`
+Features:-
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1.Grid Rendering: A grid of 1000 cells, arranged in 10 columns and 100 rows, is rendered with each cell being editable.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2,Cell Editing: Users can click on any cell to edit its content. The data is dynamically updated and stored in the application's state.
 
-### `npm test`
+3.Search and Filter: A search bar allows users to quickly locate specific data within the grid by filtering cells based on the search term.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4.Data Storage: The data entered in each cell is stored in memory using state management. This ensures that the data persists while users interact with the grid, allowing for real-time updates and dynamic changes.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---------------[Instructions on how to run the application locally]------------------
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.Clone the repo in your local.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.Run command npm install to install node modules, dependencies of this project.
 
-### `npm run eject`
+3.After doing above two simple steps , simply run npm star in your local terminal.
+ 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---------------[Usage Instructions]------------------
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Spreadsheet Features:-
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1.Editing Cells:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-Click on any cell to edit its content. The data you input will be saved in memory and will remain until you refresh the page.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2.Search and Filter:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-Use the search bar located at the top of the grid to filter the cells based on your search term.
 
-### Code Splitting
+-Cells containing the search term will be highlighted in yellow.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-The grid will only display cells that match the search term, with non-matching cells left empty.
 
-### Analyzing the Bundle Size
+3.Grid Navigation:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# Spreadsheet-App" 
+-Row numbers are displayed on the left, and column labels (A, B, C, ...) are displayed at the top, mimicking a traditional spreadsheet. 
